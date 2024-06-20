@@ -1,0 +1,18 @@
+{
+    "posts":[
+        {
+            "id":1,
+            "title":"State trong React",
+            "image":"public/image/react_state.png",
+            "created_at":"15/02/2023",
+            "status":true
+        },
+        {
+            "id":2,
+            "title":"Tổng quát về ReactJS",
+            "image":"public/image/react-js-co-ban-phan-1-63738082145.3856.jpg",
+            "created_at":"14/03/2024",
+            "status":true
+        }
+    ]
+}

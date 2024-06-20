@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 2px 1%;
+  }
+  td img{
+    border-radius: 50%;
+  }
+  .outLine{
+    width: 100%;
+    padding-left:2%;
+    padding-right:2%;
+    .managerPostTop{
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        .managerPostTopInp{
+            display: flex;
+            gap: 4%;
+            width: 40%;
+            height: 30px;
+            .inpSearch{
+                width: 55%;
+                height: 100%;
+                padding-left: 2%;
+                border-radius: 5px;
+                border: 1px solid rgb(134, 131, 131);
+            }
+            .inpSelect{
+                width: 30%;
+                height: 100%;
+                border-radius: 5px;
+                border: 1px solid rgb(134, 131, 131);
+            }
+        }
+        .addPost{
+            padding: 10px 30px;
+            border-radius: 5px;
+            background-color: rgb(40, 96, 215);
+            border: none;
+            color: white;
+            font-weight: 500;
+        }
+        .addPost:active{
+            background-color: rgb(71, 116, 213);
+        }
+    }
+    .managerPostTable{
+        margin-top: 30px;
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+        .tdF{
+            width: 4%;
+            text-align: center;
+        }
+        .imgPost{
+            height: 50px;
+            width: 22%;
+        }
+        .tdimg{
+            text-align: center;
+        }
+        .postFuncion{
+            height: 100%;
+            width: 100%;
+            padding: 7% 0px;
+            display: flex; 
+            justify-content: space-around;      
+            .btnBan{
+                padding: 2%;
+                border: none;
+                color: white;
+                background-color: rgb(255, 166, 0);
+            }   
+            .btnEdit{
+                padding: 2%;
+                border: 1px solid rgb(202, 153, 119);
+                color: rgb(207, 96, 32);
+                background-color: rgb(239, 224, 196);
+            }
+            .btnDel{
+                padding: 2%;
+                border: 1px solid rgb(232, 96, 96);
+                color: rgb(209, 32, 26);
+                background-color: rgb(238, 210, 205);
+            }
+        }
+        .publish{
+            padding: 2px;
+            border: 1px solid rgb(18, 220, 18);
+            color: rgb(13, 101, 13);
+            background-color: rgb(157, 227, 157);
+        }
+        .unpublished{
+            padding: 2px;
+            border: 1px solid rgb(220, 55, 18);
+            color: rgb(207, 39, 20);
+            background-color: rgb(200, 97, 97);
+        }
+    }
+  }
+  .loader {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #556169;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  // FromAppPost
+  .outluneFrom{
+    width: 100%;
+    background-color: rgb(108, 102, 102,0.5);
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+  .fromPost{
+    margin-top: 20px;
+    margin-left: 35%;
+    width: 35%;
+    border: 1px solid rgb(188, 177, 177);
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    background-color: white;
+    z-index: 1;
+    .formTitle{
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .Title{
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .closeForm{
+            font-size: 25px;
+        }
+    }
+    .textPost{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .textPost input{
+        height: 35px;
+        border: 1px solid rgb(187, 180, 180);
+        padding-left: 2%;
+    }
+    .inpConten{
+        height: 120px !important;   
+        padding-left: 2%;
+        padding-top: 10px;
+        max-width: 100%;
+    }
+    .img{
+        border: 1px solid rgb(139, 139, 139);
+    }
+    .formAddBtn{
+        margin-top: 22px;
+        display: flex;
+        margin-left: 60%;
+        gap: 7%;
+        margin-bottom: 20px;
+        .resetBtn{
+            padding: 5% 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(154, 150, 150);
+            color: #3e4144;
+        }
+        .resetBtn:active{
+            background-color: #9db1bb;
+        }
+        .publishBtn{
+            padding: 5% 10px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: rgb(34, 90, 221);
+        }
+        .publishBtn:active{
+            background-color: rgb(138, 163, 220);
+        }
+    }
+  }
+}
